@@ -19,7 +19,7 @@ namespace DaVIEW
             try
             {
                 var file = Environment.GetCommandLineArgs().Skip(1).FirstOrDefault();
-                // MessageBox.Show("File: " + file);
+
                 image.Source = new BitmapImage(new Uri(file));
 
                 TransformGroup group = new TransformGroup();
